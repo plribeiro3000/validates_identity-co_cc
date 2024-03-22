@@ -10,5 +10,5 @@ class ValidatesIdentity
 end
 
 ValidatesIdentity.register_person_identity_type('CO_CC', ValidatesIdentity::CoCc::Validator)
-ValidatesIdentity::ShouldaMatchers.register_person_allowed_values('CO_CC', %w[123456 1234567 12345678 123456789 1234567890])
-ValidatesIdentity::ShouldaMatchers.register_person_disallowed_values('CO_CC', %w[12345 12345678901])
+ValidatesIdentity::ShouldaMatchers.register_person_allowed_values('CO_CC', %w[12345678 1234567890])
+ValidatesIdentity::ShouldaMatchers.register_person_disallowed_values('CO_CC', %w[1234567 123456789 12345678901])
