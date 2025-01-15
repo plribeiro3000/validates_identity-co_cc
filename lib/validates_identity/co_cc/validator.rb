@@ -13,7 +13,6 @@ class ValidatesIdentity
 
       def valid?
         return true if value.blank?
-        return false if value.length == 9
 
         result.present?
       end
