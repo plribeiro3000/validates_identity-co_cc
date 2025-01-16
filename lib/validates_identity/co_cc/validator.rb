@@ -3,7 +3,7 @@
 class ValidatesIdentity
   module CoCc
     class Validator
-      VALIDATION_REGULAR_EXPRESSION = /\A\d{8,10}\z/i.freeze
+      VALIDATION_REGULAR_EXPRESSION = /\A\d{7,10}\z/i.freeze
 
       attr_reader :value
 

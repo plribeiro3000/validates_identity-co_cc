@@ -15,8 +15,8 @@ RSpec.describe ValidatesIdentity::CoCc::Validator do
     expect(described_class.new('1234567890')).to be_valid
   end
 
-  it 'rejects 1234567' do
-    expect(described_class.new('1234567')).not_to be_valid
+  it 'accepts 1234567' do
+    expect(described_class.new('1234567')).to be_valid
   end
 
   it 'rejects 12345678901' do
